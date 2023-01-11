@@ -1,0 +1,19 @@
+<p>Nombre: {{nombre}}</p>
+<p>Apellido: {{apellido}}</p>
+<p>Edad: {{edad>18?"Es mayor": "Es menor"}}</p>
+<p>Empresa: {{empresa}}</p>
+
+<br/>
+<!--Introduce tu empresa: <input type="text" #empresa (keyup)="0" [disabled]="activarinput"/>-->
+Introduce tu empresa: <input type="text" [(ngModel)]="empresa"/>
+
+<br/>
+<br/>
+{{textoregistro}}
+<br/>
+Registrado: <input type="radio" value="si" name="nRegistro" id="registro" [checked]="userNY" (click)="setRegistrado($event)"/><br>
+No Registrado: <input type="radio" value="no" name="nRegistro" (click)="setRegistrado($event)"/>
+
+{{getRegistrado()}}
+
+<!--<input type="button" value="enviar" (click)="databusiness(empresa.value)"/> -->

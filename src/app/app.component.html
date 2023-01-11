@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+<br>
+
+<form>
+
+  <input type="text" name="nombre" [(ngModel)]="nombre" ><br/>
+  <input type="text" name="apellido" [(ngModel)]="apellido"><br/>
+  <input type="submit" value="enviar" (click)="registradoUsuario()">
+</form>
+
+<br/>
+
+<p *ngIf="registrado; else sinregistrar">{{mensaje}} con el nombre {{nombre}} y de apellidos {{apellido}}</p>
+
+<ng-template #sinregistrar>
+
+  <p>nadie por aqui </p>
+
+</ng-template>
+
+<br/>
+
+<ul>
+  <li *ngFor="let entrada of entradas">{{entrada.title}}</li>
+</ul>
