@@ -6,13 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'InicioSesion';
-  mensaje = "";
+  titulo = 'Lista de usuarios';
+
+  empleado:String = "";
+
+
+
+
+
+
+
+
+
+
+/* mensaje = "";
   registrado = false; //PREDETERMINADO
   nombre:String="";
   apellido:String="";
   entradas:object[];
-
 
   constructor() {
     this.entradas=[
@@ -27,4 +38,6 @@ export class AppComponent {
 
     this.mensaje="registrado correctamente";
   }
+
+ */
 }
